@@ -1,0 +1,27 @@
+<template>
+  <div class="slds-card slds-var-p-around_x-small">
+    <template lwc:if={menu.data}>
+      <template lwc:if={menu.data.records.length}>
+        <div class="content">
+          <template for:each={menu.data.records} for:item="menuItem">
+            <c-menu-tile
+              key={menuItem.Id}
+              menu={menuItem}
+              class="slds-var-m-around_x-small"
+            >
+            </c-menu-tile>
+          </template>
+        </div>
+        <c-paginator
+          page-number={pageNumber}
+          page-size={menu.data.pageSize}
+          total-item-count={menu.data.totalItemCount}
+          onprevious={handlePreviousPage}
+          onnext={handleNextPage}
+        ></c-paginator>
+      </template>
+      <template lwc:else> There are no menu items available </template>
+    </template>
+    <template lwc:if={menu.error}> {menu.error} </template>
+  </div>
+</template>

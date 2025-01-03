@@ -1,0 +1,20 @@
+<template>
+  <!-- Lightning card component with a title and icon -->
+  <lightning-card title={aboutUslabel} icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+      <div class="slds-m-top_medium">
+        <!-- Display the user's language code -->
+        <p>{language}</p>
+        <br />
+        <!-- Check if labels data is available -->
+        <template lwc:if={aboutus}>
+          <i><p>{aboutus}</p></i>
+        </template>
+        <!-- Display an error message if there is an error -->
+        <template lwc:if={error}>
+          <p>{error}</p>
+        </template>
+      </div>
+    </div>
+  </lightning-card>
+</template>

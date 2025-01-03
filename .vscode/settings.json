@@ -1,0 +1,23 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": false,
+  "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
+  "salesforcedx-vscode-core.push-or-deploy-on-save.ignoreConflictsOnPush": true,
+  "salesforcedx-vscode-core.push-or-deploy-on-save.preferDeployOnSave": true,
+  "eslint.format.enable": true,
+  "sonarlint.analyzerProperties": {
+
+  },
+  "apexPMD.rulesets": [
+    "C:\\Users\\write\\Documents\\sfdc\\turing\\ruleset.xml"
+  ],
+  "apexPMD.runOnFileChange": false,
+  "salesforce.einsteinForDevelopers.enable": true,
+  "salesforce.einsteinForDevelopers.enableDebugLogging": true
+}
